@@ -68,7 +68,7 @@ To visualize a performance metric, 'math-achievement-lea-sy2015-16.csv' file was
 The above function was called on the math data on the blurred column 'MAM_MTH00PCTPROF_1516':  
 blurred_resolve(math_data, 'MAM_MTH00PCTPROF_1516')  
 
-To visualize this column after unblurring, a histogram was plotted to view the distribution of the performance metric (Proficiency Percentage in Mathematics) after removing na values.
+To visualize this column after unblurring, a histogram was plotted to view the distribution of the performance metric (Proficiency Percentage in Mathematics across all grades for the year 2015-16) after removing na values.
 
 ![](/images/Q3b.png)
 
@@ -78,11 +78,12 @@ As we can see from the graph, there are high number of students with high profic
 
 ### Choose which school districts will have their funding cut and how this will be done.
 
-The total amount of Federal Revenue across all states is: 55602742000
-15% budget cut amounts to:  *8340411300.0*
-After cutting 15% of the revenue the amount that still remains: 47262330700.0
+Total U.S. federal budget for funding school districts: $55602742000
+15% of the U.S. federal budget for funding school districts:  *$8340411300*
 
-The table representing the leaids( districts) vs cuts is as belows:
+To find out which school districts must have their funding cut, the debt was calculated for each districts. Debts greater than 0 means that the district has extra revenue compared to their expense, so revenue could be reduced here. So, the districts with debt<0 were considered where sum of excess revenue for all districts together summed up to $26211614000. Depending on how much excess revenue a district has, funding will be reduced accordingly.
+
+The table representing the leaids vs federal revenue cuts is as belows:
 
 ![](/images/Q4.png)
 
@@ -92,4 +93,4 @@ The table representing the leaids( districts) vs cuts is as belows:
 
 ### Provide a statement for your supervisor justifying your decisions on which school districts will lose funding.
 
-explanation
+It would not be ideal to reduce equal amount of funding from each district because districts which have a small excess amount of revenue might go into debt if a large amount of funding is cut, and vice versa. So, depending on the amount of excess revenue held by each district, federal funding can be reduced accordingly.
